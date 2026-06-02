@@ -1,12 +1,37 @@
-Sistem ERP pentru gestionarea resurselor companiei
+# Sistem ERP pentru Gestionarea Resurselor Companiei
 
-Descriere: Implementarea unui system de tip Enterprise Resource Planning (ERP) pentru managementul echipelor, sarcinilor, resurselor umane ;i financiare ale unei companii de dimensiuni medii.
+## 📝 Descriere Proiect
+Acest sistem Enterprise Resource Planning (ERP) este conceput pentru companii de dimensiuni medii, având ca scop centralizarea managementului echipelor, sarcinilor, resurselor umane și financiare.
 
-Tehnologii: Angular/React, Spring Boot / .NET, Oracle / SQL Server, Kubernetes
+## 🚀 Tehnologii Utilizate
+* **Frontend:** React / Angular
+* **Backend:** Spring Boot (Java) sau .NET (C#)
+* **Bază de date:** Oracle SQL / SQL Server
+* **Orchestrare:** Kubernetes (Docker)
+* **Management & CI/CD:** Trello, GitHub Actions
 
-Funcționalități cheie: 
-- Modul HR: angajați, contracte, concedii, evaluări de performanță
-- Modul de gestionare a proiectelor și alocarea resurselor
-- Modul financiar: bugete, cheltuieli, rapoarte contabile
-- Dashbaord executiv cu KPI-uri în timp real
-- Integrare cu servicii externe (e-mail, calendar, facturarre electronică)
+## 📋 Cerințe de Sistem
+* Node.js (v18+)
+* JDK 17+ sau .NET 8 SDK
+* Docker & Kubernetes (Minikube pentru rulare locală)
+* Instanță activă de bază de date
+
+## 🛠️ Ghid de Instalare și Rulare
+1. **Clonarea repository-ului:**
+   ```bash
+   git clone <url-repository>
+
+2. **Pornirea Backend-ului:**
+   ```bash
+   cd backend
+   ./mvnw spring-boot:run  # sau dotnet run
+
+3. **Pornirea Frontend-ului:**
+   ```bash
+   cd frontend
+   npm install
+   npm start
+
+4. **Deploy în Kubernetes:**
+   ```bash
+   kubectl apply -f k8s/
