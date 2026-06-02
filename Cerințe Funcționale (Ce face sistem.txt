@@ -1,0 +1,12 @@
+Cerințe Funcționale (Ce face sistemul)
+F-01 (HR): Sistemul trebuie să permită adăugarea, modificarea și ștergerea (CRUD) profilelor de angajați și a contractelor de muncă.  
+F-02 (HR): Sistemul trebuie să permită angajaților să solicite concedii, iar managerilor să le aprobe sau să le respingă.  
+F-03 (Project Management): Managerii de proiect trebuie să poată aloca angajați pe sarcini specifice în funcție de disponibilitate.  
+F-04 (Financiar): Sistemul trebuie să calculeze automat bugetul rămas per proiect după fiecare cheltuială introdusă.  
+F-05 (Dashboard): Dashboard-ul executiv trebuie să afișeze KPI-uri grafice în timp real (ex. costuri vs. buget, număr task-uri active).  
+
+Cerințe Non-Funcționale (Cum funcționează sistemul)
+NF-01 (Performanță): Timpul de răspuns al API-ului pentru încărcarea dashboard-ului nu trebuie să depășească 2 secunde.
+NF-02 (Securitate): Autentificarea trebuie realizată pe bază de roluri (RBAC - Role-Based Access Control) pentru ca angajații simpli să nu poată vedea datele financiare sau contractele colegilor.
+NF-03 (Scalabilitate): Aplicația va fi containerizată cu Docker și orchestrată în Kubernetes pentru a permite scalarea automată în perioadele cu trafic intens.  
+NF-04 (Disponibilitate): Sistemul trebuie să aibă o disponibilitate de 99.9% (uptime).

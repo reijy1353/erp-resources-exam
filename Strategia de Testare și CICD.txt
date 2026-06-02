@@ -1,0 +1,8 @@
+Strategia de Testare și CI/CD   
+Unit Tests: Scrise în JUnit/Mockito (pentru Spring) sau xUnit (pentru .NET) pentru a testa calculul corect al bugetului rămas sau validarea zilelor de concediu disponibile.  
+Integration Tests: Testarea endpoint-urilor API-ului REST (ex: introducerea unui angajat nou salvează corect datele în Oracle/SQL Server).  
+Pipeline CI/CD (GitHub Actions):  
+Trigger: on: push sau pull_request pe branch-urile develop și main.  
+Task (sau job) 1: Build frontend și backend.
+Task 2: Rulare teste automate + generare raport de Code Coverage (scopul este un coverage de minim 70-80%).  
+Task 3 (Doar pe main): Creare imagine Docker, push în Docker Hub și deploy în clusterul Kubernetes.  

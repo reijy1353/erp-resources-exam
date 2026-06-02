@@ -1,0 +1,47 @@
+# Sistem ERP pentru Gestionarea Resurselor Companiei
+
+## 📝 Descriere Proiect
+Acest sistem Enterprise Resource Planning (ERP) este conceput pentru companii de dimensiuni medii, având ca scop centralizarea managementului echipelor, sarcinilor, resurselor umane și financiare.
+
+## 🚀 Tehnologii Utilizate
+* **Frontend:** React / Angular
+* **Backend:** Spring Boot (Java) sau .NET (C#)
+* **Bază de date:** Oracle SQL / SQL Server
+* **Orchestrare:** Kubernetes (Docker)
+* **Management & CI/CD:** Trello, GitHub Actions
+
+## 📋 Cerințe de Sistem
+* Node.js (v18+)
+* JDK 17+ sau .NET 8 SDK
+* Docker & Kubernetes (Minikube pentru rulare locală)
+* Instanță activă de bază de date
+
+## 🛠️ Ghid de Instalare și Rulare
+1. **Clonarea repository-ului:**
+   ```bash
+   git clone <url-repository>
+
+2. **Pornirea Backend-ului:**
+   ```bash
+   cd backend
+   ./mvnw spring-boot:run  # sau dotnet run
+
+3. **Pornirea Frontend-ului:**
+   ```bash
+   cd frontend
+   npm install
+   npm start
+
+4. **Deploy în Kubernetes:**
+   ```bash
+   kubectl apply -f k8s/
+
+---
+
+## 💡 Sfaturi pentru Susținerea Publică (Examen) [cite: 20, 21]
+Când vei prezenta proiectul în fața comisiei, axează-te pe deciziile manageriale[cite: 21]:
+* Explică de ce ai ales **Agile**: ERP-ul are module independente (HR, Finanțe); Agile ți-a permis să livrezi un modul HR funcțional la finalul Sprint-ului 1, fără să aștepți dezvoltarea întregului sistem.
+* Arată **Trello Board-ul**: Demonstrează cum ai mutat task-urile din Backlog în Done și cum reflectă acestea Story Points-urile alese[cite: 23].
+* Arată **Istoricul Git**: Comisia apreciază enorm commit-urile curate (ex: `feat(hr): added employee crud implementation`) și Pull Request-urile făcute corect din feature branches în `develop`[cite: 8, 9].
+
+Dacă ai nevoie să detaliem specificațiile tehnice (SRS) [cite: 15] sau să scriem scriptul pentru pipeline-ul de GitHub Actions, dă-mi un semn!
